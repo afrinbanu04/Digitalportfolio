@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Portfolio
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            
+            padding: 0;
+            background-color:rgb(225, 231, 233);
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding:2rem 0;
+
+        }
+        .header-content h1{
+            font-size: 2.5rem;
+        }
+        .pp{
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }
+        nav{
+            background-color:#333;
+            color: #fff;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        
+        .section-content{
+            background-color:#fff;
+            
+            padding : 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+
+        }
+        footer{
+            text-align: center;
+            padding: 0.5rem 0;
+            background-color: #333;
+            color:#fff;
+        }
+        .social-icons {
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .fa-facebook {
+            background: #063290;
+            color: white;
+        }
+        .fa-twitter {
+            background: #0e84de;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #0808af;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #e80606;
+            color: white;
+        }
+
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+        #footer {
+            background-color:black;
+            text-align: center;
+            height: 10px;
+            
+
+        }
+
+        
+
+
+a:hover {
+  color: rgb(37, 89, 200);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+      
+    </style>
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+
+            <img  src="C:\Users\rmd82\OneDrive\Pictures\afrin copy.jpg" alt="PROFILE PICTURE" class="pp">
+            
+            <h1> M.AFRIN BANU </h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#education"> Education</a></li>
+            <li><a href="#Languages known"> Languages known</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        
+        <div class="section-content">
+            <h2> ABOUT ME</h2>
+            <p> HI ! I am Afrin banu . I am doing my BCA degree in bon secours college for women .   </p>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-content">
+            <h2> EDUCATION </h2>
+            <p> BCA </p>
+        </div>
+    </section>
+    <section id="Languages known">
+        <div class="section-content">
+            <h2>LANGUAGES KNOWN </h2>
+            <ul>
+                <li> C </li>
+                <li> C++ </li>
+                <li> Python </li>
+                <li> Java </li>
+                <li> Sql </li>
+            </ul>
+          </div>
+    </section>
+    <section id="contact">
+        <div class="section-content">
+            <h3> CONTACT</h3>
+            <p> Email: <a href="#" > rmd824448@gmail.com </a> </p>
+        </div>
+    </section>
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <!-- social media icons -->
+                <div class="social-icons ">
+                   <!-- <a href="#" class="fa fa-facebook"></a>
+                      <a href="#" class="fa fa-twitter"></a>
+                      <a href="#" class="fa fa-google"></a>
+                      <a href="#" class="fa fa-linkedin"></a>
+                      <a href="#" class="fa fa-youtube"></a>
+                      <a href="#" class="fa fa-instagram"></a>
+                      <a href="#" class="fa fa-pinterest"></a> -->
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i  class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    
+                </div>
+            </div>
+        
+    </footer>
+   
+    <script>
+        document.querySelectorAll('a[href="#"]').forEach(anchor=> {
+            anchor.addEventListener('click',function(e) {
+                e.preventDefault();
+
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if(targetElement){
+                    window.scrollTo ( {
+                        top:targetElement.offsettop,
+                        behavior:'smooth'
+        
+                    })   ;
+                }
+            });
+        });
+    </script>
+
+</body>
+    </html>
+
+
